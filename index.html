@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UV-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Personal Portfolio website</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="media.css">
+        <script src="https://kit.fontawesome.com/e649a760f0.js" crossorigin="anonymous"></script>
+    </head> 
+    <body>
+        <div id="header">
+            <div class="container">
+                <nav>
+                    <img src="images/logo.jpeg" class="logo">
+                    <ul id="sidemenu">
+                        <li><a href="#header">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#portfolio">Portfolio</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                        <i class="fa-solid fa-xmark"onclick="closemenu()"></i>
+                    </ul>
+                    <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+                </nav>
+                <div class="header-text">
+                    <p>Project Engineer</p>
+                    <h1>Hi, I'm <span>Arathy.A</span><br>From Madurai City</h1>
+                </div>
+            </div>
+
+        </div>
+
+        <div id="about">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpeg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Energetic Young Professional willing to learn 
+                        and deploy new skills in Industry 4.0 and 
+                        exhibit more efficiency in agile way and to work for 
+                        the wellness sand betterment of the organisation and society.</p>
+                        <div class="tab-titles">
+                            <p class="tab-links active-link" onclick="opentab('Skills')">Skills</p>
+                            <p class="tab-links"onclick="opentab('Experience')">Experience</p>
+                            <p class="tab-links"onclick="opentab('Education')">Education</p>
+                        </div>
+                        <div class="tab-contents active-tab" id="Skills">
+                            <ul>
+                                <li><span>HTML,CSS,Javascript</span><br>Front End Development</li>
+                                <li><span>Python Basics</span></li>
+                                <li><span>COBOL,VSAM,JCL,DB2</span><br>Mainframe Development</li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Experience">
+                            <ul>
+                                <li><span>May 2022-September 2023 Wipro, Chennai</span><br>Project Engineer
+                                <br>Responsibilities:<br>Develop atp standards and controls to ensure every system’s projects function effectibely perform all varied applications as well as operating system.
+                                <br>Design and develop code applications to technical and functional programming standards.
+                                <br>Evaluate, design, code and test improvement as required to complex modules.
+                                <br>Plan and implement every needed process steps as defined in methodologies.
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="tab-contents" id="Education">
+                            <ul>
+                                <li><span>B.E Computer Science Engineering - Kamaraj College of Engineer and Technology</span>
+                                    <br>CGPA:8.17</li>
+                                <li><span>12th-P.K.N MAtriculation Hr. Sec. School</span>
+                                    <br>Percentage:85.25%</li>
+                                <li><span>10th-P.K.N MAtriculation Hr. Sec. School</span>
+                                    <br>Percentage:88.4%</li>
+                            </ul>
+                        </div>
+                    </div>
+            </div>
+        </div>
+        <!------------services-->
+
+        <div id="services">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-brands fa-python"></i>
+                    <h2>Front End</h2>
+                    <p>Creating the user interface (UI) and user experience (UX) for websites and web applications.</p>
+                    <a href="https://en.wikipedia.org/wiki/Front-end_web_development">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Mainframe</h2>
+                    <p>Creates and maintains applications for computers with mainframe systems</p>
+                    <a href="https://www.adaface.com/job-descriptions/mainframe-developer/">Learn more</a>
+                </div>
+
+            </div>
+
+        </div>
+        <!-------------portfolio------->
+        <div id="portfolio">
+            <div class="container">
+                <h1 class="sub-title">My work</h1>
+                <div class="work-list">
+                    <div class="work">
+                        <img src="images/ag.jfif" >
+                        <div class="layer">
+                            <h3>AR viewer</h3>
+                            <p>To view the object in 2D(or 3D) with the real world to experience 
+                                the 360 degree view of the object.</p>
+                            <a href="images/Development of ar viewer.pptx"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                    <div class="work">
+                        <img src="images/steel.jfif" >
+                        <div class="layer">
+                            <h3>Predication of Co2 parameter</h3>
+                            <p>To predict the various parameters that 
+                                contribute to CO2 emissions in steel industry.</p>
+                            <a href="https://github.com/ArathyAdithya/co2_emission.git"><i class="fa-solid fa-link"></i></a>
+                        </div>
+                    </div>
+                </div>
+        </div>
+        
+        <!--------contact-->
+        <div id="contact">
+            <div class="container">
+                <div class="row">
+                    <div class="contact-left">
+                        <h1 class="sub-title">Contact Me</h1>
+                        <p><i class="fa-regular fa-envelope"></i>arathy2106@gmail.com</p>
+                        <p><i class="fa-solid fa-phone"></i>+91 8056817079</p>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/arathyathiyaman/"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/ArathyAdithya"><i class="fa-brands fa-github"></i></a>
+                            <a href="https://www.instagram.com/arathy.a_21"><i class="fa-brands fa-instagram"></i></a>
+                        </div>
+                        <a href="images/Arathy.docx" download class="btn btn2">Download CV</a>
+                    </div>
+                    <div class="contact-right">
+                            <form name="submit-to-google-sheet">
+                                <input type="text" name="Name" placeholder="Your Name" required>
+                                <input type="email" name="Email" placeholder="Your Email" required>
+                                <textarea name="Message" rows="6" placeholder="Your Message" required></textarea>
+                                <button type="submit" class="btn btn2">Submit</button>
+                            </form>
+                            <span id="msg"></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <script>
+            var tablinks=document.getElementsByClassName("tab-links");
+            var tabcontents=document.getElementsByClassName("tab-contents");
+            function opentab(tabname){
+                for(tablink of tablinks){
+                    tablink.classList.remove("active-link");
+                }
+                for(tabcontent of tabcontents){
+                    tabcontent.classList.remove("active-tab");
+                }
+                event.currentTarget.classList.add("active-link");
+                document.getElementById(tabname).classList.add("active-tab");
+            }
+
+        </script>
+        <script>
+            var sidemeu=document.getElementById("sidemenu");
+            function openmenu()
+            {
+                sidemeu.style.right="0";
+            }
+            function closemenu()
+            {
+                sidemeu.style.right="-200px";
+            }
+        </script>
+        <script>
+  const scriptURL = "https://script.google.com/macros/s/AKfycbx7l0tYDhtYhD50_kiWtJpgXdWuEgmds2sHNmykIBiaWv0C55dXKgtZcTfz9WcsnVWX/exec"
+  const form = document.forms['submit-to-google-sheet']
+  const msg=document.getElementById("msg")
+
+  form.addEventListener('submit', e => {
+    e.preventDefault()
+    fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+      .then(response => {
+        msg.innerHTML="Message sent successfully"
+        setTimeout(function(){
+            msg.innerHTML=""
+        },5000)
+        form.reset()
+      })
+      .catch(error => console.error('Error!', error.message))
+  })
+</script>
+    </body>
+</html>
