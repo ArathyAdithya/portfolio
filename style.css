@@ -322,15 +322,19 @@ nav .fa-solid{
 }
 @media only screen and ( max-width:600px)
 {
+    *{
+        margin:0;
+    }
     #header{
-        background-image: url(images/mobile.jpg);
+        background-image:none;
     }
     .header-text{
-        margin-top: 100%;
-        font-size: 16px;
+        margin:200px 10px 10px 10px;
+        text-align: center;
+        font-size: 20px;
     }
     .header-text h1{
-        font-size: 30px;
+        font-size: 26px;
     }
     nav .fa-solid{
         display: block;
@@ -350,18 +354,21 @@ nav .fa-solid{
     nav ul li
     {
         display: block;
-        margin:25px;
+        margin:50px;
     }
     nav ul .fa-solid{
         position: absolute;
-        top:25px;
-        left: 25px;
+        top:20px;
+        left: 20px;
         cursor: pointer;
 
     }
     .sub-title{
         font-size:40px;
 
+    }
+    #about{
+        margin: 20px;
     }
     .about-col-1,.about-col-2{
         flex-basis: 100%;
@@ -378,5 +385,10 @@ nav .fa-solid{
     }
     .contact-left,.contact-right{
         flex-basis: 100%;
+    }
+    #services,
+    #portfolio,
+    #contact{
+        margin: 20px;
     }
 }
